@@ -1,0 +1,220 @@
+/* Общие стили */
+.page {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: antiquewhite;
+}
+.page__container {
+  min-height: 100vh;
+  background-color: rgb(228, 208, 183);
+  width: 80%;
+  max-width: 1024px;
+  min-width: 320px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+.header-logo {
+  border-radius: 10px;
+  width: 150px;
+  height: 100px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+.header__link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 1s;
+}
+.header__link:hover {
+  color: green;
+  transform: scale(1.1);
+}
+
+/* Ссылки на игры на домашней странице */
+.game-links {
+  margin: 0 auto;
+  padding: 30px 0;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 26px;
+}
+.game-links__link {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  background-color: aliceblue;
+  box-shadow: 0 0 10px red;
+  transition: 1s;
+}
+.game-links__link:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgb(20, 245, 20);
+}
+.game-links__image {
+  width: 100%;
+  height: 100%;
+}
+
+/* Основная секция везде кроме boring journey */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6% 6% 0;
+}
+.main-section__title {
+  color: rgb(185, 25, 25);
+  margin: 2%;
+}
+.main-section__text {
+  margin: 2% auto;
+  max-width: 700px;
+}
+
+/* Основная секция boring journey */
+.boring-journey-main-section {
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+}
+.boring-journey-main-section__title {
+  margin: 0 auto;
+  color: rgb(185, 25, 25);
+  font-size: 25px;
+}
+.boring-journey-main-section__text {
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+.boring-journey-main-section__image {
+  margin: 0 auto;
+  max-width: 95%;
+  box-shadow: 0px 0px 20px black;
+  border-radius: 50px;
+}
+
+@media screen and (max-width:730px) {
+  .boring-journey-main-section__title {
+    font-size: 20px;
+  }
+  .boring-journey-main-section__text {
+    font-size: 15px;
+  }
+}
+
+.boring-journey-main-section__button {
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: green;
+  border-radius: 10px;
+  background-image: linear-gradient(160deg, transparent, rgb(108, 179, 108));
+  box-shadow: 0px -5px 20px lightgoldenrodyellow;
+  transition: 2s;
+}
+.boring-journey-main-section__button:hover{
+  transform: scale(1.15);
+}
+
+/* Стили для игры guess a number */
+.lastResult {
+  text-align: center;
+  color: antiquewhite;
+  padding: 3px;
+}
+.guessSubmit {
+  cursor: pointer;
+}
+.resultParas {
+  min-height: 120px;
+}
+.lowOrHi {
+  margin-bottom: 7px;
+}
+
+/* Стили декоративной секции с картинками */
+.decoration-section {
+  min-height: 220px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.decoration-section__element {
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+.decoration-section__element_kind_one {
+  background-image: url(./images/umnik20.png);
+}
+.decoration-section__element_kind_two {
+  background-image: url(./images/umnikded.png);
+}
+.decoration-section__element_kind_three {
+  background-image: url(./images/umnik21.png);
+}
+
+/* Кнопка хода в boring journey */
+#moveButton {
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: rgb(255, 166, 0);
+  border-radius: 10px;
+  background-image: linear-gradient(160deg, transparent, rgb(240, 238, 120));
+  box-shadow: 0px -5px 20px lightgoldenrodyellow;
+  transition: 2s;
+}
+#moveButton:hover{
+  transform: scale(1.1);
+}
+.boring-journey-main-section__button_invisible {
+  display: none;
+}
+
+/* Футер */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_page_about {
+  padding-top: 150px;
+}
+.footer__text {
+  margin: 0;
+  opacity: .6;
+  font-size: 12px;
+  padding-top: 24px;
+  padding-right: 2%;
+}
+
+
+@media screen and (max-width:540px) {
+  .form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .guessField {
+    margin-bottom: 3px;
+  }
+}

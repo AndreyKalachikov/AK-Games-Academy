@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="icon" href='../images/guess_a_number_icon.png' type="image">
+    <title>Guess_a_number</title>
+</head>
+  <body class="page">
+    <div class="page__container">
+      <header class="header">
+        <img src="../images/AKGAlogo.svg" alt="logo" class="header-logo">
+        <nav class="header__menu">
+          <a href="../index.html" class="header__link">Home</a>
+          <a href="../about/about.html" class="header__link">About</a>
+        </nav>
+      </header>
+
+      <section class="main-section">
+        <h1 class="main-section__title">Guess a number game</h1>
+        <p class="main-section__text">I have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. I'll tell you if your guess was too high or too low.</p>
+
+        <form class="form">
+          <label for="guessField">Enter a guess: </label>
+          <input type="text" id="guessField" class="guessField">
+          <input type="submit" value="Submit guess" class="guessSubmit">
+        </form>
+
+        <div class="resultParas">
+          <p class="guesses"></p>
+          <p class="lastResult"></p>
+          <p class="lowOrHi"></p>
+        </div>
+      </section>
+      <section class="decoration-section">
+        <div class="decoration-section__element decoration-section__element_kind_one"></div>
+        <div class="decoration-section__element decoration-section__element_kind_two"></div>
+        <div class="decoration-section__element decoration-section__element_kind_three"></div>
+      </section>
+
+      <footer class="footer">
+        <p class="footer__text">Created by Andrey Kalachikov with MDN Web Docs help</p>
+      </footer>
+
+    </div>
+    <script src="guess_a_number.js"></script>
+  </body>
+</html>
