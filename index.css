@@ -76,6 +76,10 @@
 .main-section__title {
   color: rgb(185, 25, 25);
   margin: 2%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .main-section__text {
   margin: 2% auto;
@@ -116,6 +120,8 @@
 
 .boring-journey-main-section__button {
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   padding: 0 1rem;
@@ -174,6 +180,8 @@
 /* Кнопка хода в boring journey */
 #moveButton {
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   padding: 0 1rem;
